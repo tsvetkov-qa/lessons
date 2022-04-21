@@ -111,7 +111,7 @@ function check(age) {
 
 //Task 3**
 function knownAge(age) {
-    if(typeof age == 'number' ||  !isNaN(Number(age))) {
+    if(typeof age == 'number' ||  !isNaN(Number(age)) && typeof age != "boolean") {
         const adult = 18;
         const old = 60;
         if(age < adult) {
@@ -130,4 +130,4 @@ function knownAge(age) {
     else {
         console.log("Please enter a number");}
 }
-knownAge("h");
+knownAge(true);
