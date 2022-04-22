@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function checkAge() {
+            let age = prompt("Введите ваш возраст");
+            if(typeof age == 'number' ||  !isNaN(Number(age) )) {
+                const adult = 18;
+                const old = 60;
+                if(age < adult) {
+                    alert("You don't have access cause your age is " + age);
+                }
+                else if (age >= adult && age < old) {
+                    alert("Welcome!");
+                }
+                else if (age > old) {
+                    alert("Keep calm and look Culture Channel")
+                }
+                else {
+                    alert("Technical work")
+                }
+}
+        else {
+            alert("Please enter a number");
+        }
+}
+    </script>
+</head>
+<body>
+    <button type="button" onclick="checkAge()">Click on me</button>
+</body>
+</html>
